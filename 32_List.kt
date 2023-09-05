@@ -48,14 +48,15 @@ fun main() {
     println(sit.get(2))
     
     // Creating a mutable list
-    // Mutable list me v specific data type ka bna skte hai 
-    val sit1 = mutableListOf("apple", "banana", "cherry")
+   // Mutable list me v specific data type ka bna skte hai 
+    val sit1 = mutableListOf("apple", "banana", "cherry","siliguri")
     
     // Adding elements to a mutable list
     sit1.add(2,"orange")
     
     // Removing an element
     sit1.remove("banana")
+    sit1.removeAt(3) // Remove siliguri 
     
     // Modifying an element
     sit1[0] = "grape"
@@ -87,6 +88,22 @@ fun main() {
     for(i in sit2){
         println("Printing sit2 elment :- $i")
     }
+
+
+
+    // Taking user inpute in array 
+
+   print("Enter no of student ")
+   val num = readLine()!!.toInt()
+   println("Enter student name")
+   var student = List<String>(num,{readLine()!!})
+   // var student = Array(num){readLine()!!} >>> Uper wale ko ase v likh skte hai 
+
+   for(i in student){
+    println("Name is $i")
+   }
+
+
 
     // Other function are same as array
 
