@@ -13,37 +13,85 @@ fun main() {
             will replace the previous one.
     */
 
-    val sit = mutableMapOf("apple" to 3, "banana" to 5, "cherry" to 2)
+    val sit = mutableMapOf(
+        // Key or value kuch v datatye ke ho skte hai jb tak
+        //  datatype define nhi kiye hai
+        "apple" to 3,
+        "banana" to 5,
+        "cherry" to 2,
+        5 to "Apple" 
+
+        )
     // Printing map
+    println(sit) // {} me value aayega 
+    println(" ")
+
+    // Using get function for printing
+    println(sit.get("banana"))
+    println(" ")
+
+    // Using for loop for printing
     for ((name, value) in sit) {
         println("key is :- $name and value is :- $value")
     }
+    println(" ")
+    // Other way to printing using for loop
+    for(key in sit.keys){
+        println("Key is :- $key and value is :- ${sit[key]}")
+    }
+    println(" ")
+
+    // Printing only keys 
+    println("printing keys only :- ${sit.keys}") // [] me print hpga
+    println(" ")
+
+    // Printing value only
+    println("Printing value only :- ${sit.values} ")
+    println(" ")
+
+    // Printing size of map
+    println("Printing size of map sit :- ${sit.size} ")
+    println(" ")
+
 
     // Accessing values using keys
     val appleCount = sit["apple"] // 3 print
     println("Printing value through key :- $appleCount")
+    println(" ")
 
     // Adding a new entry
     sit["orange"] = 4
     for ((name, value) in sit) {
         println("key is :- $name and value is :- $value")
     }
+    println(" ")
 
     // Modifying a value
     sit["apple"] = 6
+    // Modifying a value by put function
+    sit.put("banana",65)
+
     for ((name, value) in sit) {
         println("key is :- $name and value is :- $value")
     }
+    println(" ")
 
     // Removing an entry
     sit.remove("banana")
+    // Other way to remove by key 
+    sit.keys.remove("apple")
+    // Removing an entry by value 
+    sit.values.remove(2)
+
     for ((name, value) in sit) {
         println("key is :- $name and value is :- $value")
     }
+    println(" ")
 
     // Checking if a key exists in the map
     val cheack = "grapes" in sit // false
     println("Cheack grape key is exixts or not :- $cheack")
+    println(" ")
 
     /*
     2. Retrieval and Lookup:
@@ -69,7 +117,11 @@ fun main() {
 
     */
 
-    val sit1 = mapOf<String, Int>("Alice" to 25, "Bob" to 30, "Charlie" to 28)
+    val sit1 = mapOf<String, Int>( // Yha datatype specific hai
+        "Alice" to 25, 
+        "Bob" to 30, 
+        "Charlie" to 28
+        )
 
     // You cannot modify the immutableMap after creation
     // immutableMap["Bob"] = 31 // This will result in a compilation error
@@ -225,8 +277,8 @@ fun main() {
                 are the cached data.
             
             >>> Associating Data: Maps are useful for representing 
-                relationships or associations between entities. For example, 
-                mapping user IDs to user profiles.
+                relationships or associations between entities. For 
+                example, mapping user IDs to user profiles.
     
             >>> Counting and Aggregating: Maps can be employed to count 
                 occurrences of elements in a collection or aggregate data
