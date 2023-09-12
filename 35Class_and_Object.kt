@@ -48,11 +48,11 @@ fun main() {
     // Syntax
 
     val lg = Mobile() // Creating object
-    lg.display1()
+    lg.display1() // Calling function member using object 
 
     val Realme = Mobile() // Creating another object
     Realme.model = "ab303c" // Modify class properties for this(Realme) object
-    Realme.price = 3665.8634F
+    Realme.price = 3665.8634F //Accessing properties using object 
     Realme.display1()
 
     val nokia = Mobile() // Creating another object
@@ -60,3 +60,15 @@ fun main() {
     nokia.display1()
 
 }
+
+
+/*
+>>> Yha jb v koi object bna rhe hai to eak default constructor create ho ja rha hai
+>>> Jb v ham koi class define krte hai or uske andr koi constructor define nhi krte 
+    hai to kotlinby deaful uske andr eak  constructor define kr deta hai jo ki 
+    parameter less hota hai (Default constructor)
+>>> Default constructor paremeter less constructor hota hai uske andr koi 
+    parameter nhi hota hai 
+
+
+*/
