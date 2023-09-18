@@ -1,7 +1,6 @@
-//  Inheritance with Primary Constructor
+// Inheritance with Primary and Secondary Constructor in same code44_InConstructorheritance_with_Primary_and_Secondary_Constructor
 
-
-open class Father1(car:String,money:Int){ // Iss constructor ko aargument Son class ka object dega
+open class Father3(car:String,money:Int){ // Iss constructor ko aargument Son class ka object dega
     // Properties
     var car : String 
     var money:Int
@@ -19,18 +18,17 @@ open class Father1(car:String,money:Int){ // Iss constructor ko aargument Son cl
     }
 }
 
-// RULES:-
-
-// Father class me jo constructor bnaye hai uske argument ko yha mention krna hoga
-// Or Son class me constructor bnana chahte hai to uske argument ko v iske sath likhna hoga 
-// Or fir niche Father me btna hoga ki Father calss ka argument kon kon sa hai 
-class Son1(car:String,money:Int, Bike:String):Father1(car,money){
+// Niche Father3 ke bad () nhii dege
+class Son3:Father3{
     // Properties
     var Bike :String
 
-    init{
+    // Constructor
+
+    constructor(car:String,money:Int, Bike:String):super(car,money){
         this.Bike=Bike
     }
+
     // Member function
     fun show(){
         println("Son Bike :- $Bike ")
@@ -47,7 +45,7 @@ class Son1(car:String,money:Int, Bike:String):Father1(car,money){
 fun main(){
 
     
-    var s1 =Son1("mg 3000",501,"KS 100")
+    var s1 =Son3("mg 3000",501,"KS 100")
     s1.show()
   
     // Ressine v kr skte hai
