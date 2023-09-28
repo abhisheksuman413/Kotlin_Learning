@@ -7,7 +7,7 @@
 // Agr kisi calss ko abstract bnana hai to uss class ke aage abstract likhna pdega 
 // Jb v koi class abstract banta hai hai to by default wo open hota hai 
 // wha pe open likhne ka jarurat hai hota hai 
-// Absttract class ka object create nhi hota hai 
+// Abstract class ka object create nhi hota hai 
 // yha hamlog Father11 ka koi object nhi create kr skte hai 
 // Abstract class me ham abstract method likh skte hai
 
@@ -80,7 +80,7 @@ Here are some key characteristics of abstract classes in Kotlin:
     can have both abstract (unimplemented) methods and concrete (implemented) 
     methods. Abstract methods are declared using the abstract keyword 
     and do not have a method body, while concrete methods have an i
-    mplementation.
+    mplementation. 
 
 >>> Subclasses Must Implement Abstract Methods: Concrete subclasses 
     that inherit from an abstract class must provide implementations 
