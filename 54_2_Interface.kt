@@ -27,6 +27,10 @@ class C : A, B{
         super<A>.callMe() // Jis interface ke callMe ko use krna hai usko <> ke andr likh dege 
                          // ab niche main() me object bna kr CallMe ko call krege to 
                         // interface A ka callMe call hoga 
+        
+        // Interface B ke liye yha se kr skte hai 
+        super<B>.callMe() 
+        // Eak hi object se interface A or interface B dono ke function call ho skta hai
 
     }
 }
