@@ -13,7 +13,7 @@ fun main() {
     println(sit[3])
     println(sit[4])
 
-    // " " >>> Iske andr ko hoga wo string hi mana jyega
+    // " " >>> Iske andr jo hoga wo string hi mana jyega
 
     // String Concatenation  >>> Concatenation ka matlb hota hai add krna do string ko
 
@@ -31,7 +31,7 @@ fun main() {
     // Concate string  with integer
 
     println("100 "+50) // Yha 50 string bn ja rha hai 
-    // println(50+"1000") >>> This is not possible becouse integer ko string ke sath Concate nhu kr skte hai 
+    // println(50+"1000") >>> This is not possible becouse integer ko string ke sath Concate nhi kr skte hai 
 
 
 

@@ -15,6 +15,7 @@ Class:
 // In real world jo file ka name hota hai wahi class ka name rakhte hai
 // Syntax
 class Mobile {
+    
 
     // Properties/Attributes
     var model: String = "lg420"

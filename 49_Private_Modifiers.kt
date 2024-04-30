@@ -8,9 +8,9 @@ private:- The private modifier restricts visibility to the enclosing
 // Niche a ko private bna rhe hai iska matlab a kewal Father7 class me hi use kr skte hai
 
 
-open class Father7 {
+ open class Father7 {
     // Properties
-    private var a: Int = 11 // Yha a ko private kr rhe hai
+    private  var a: Int = 11 // Yha a ko private kr rhe hai
     var b: Int = 32
     var c: Int = 67
     var d: Int = 112

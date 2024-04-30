@@ -20,7 +20,7 @@ fun main() {
         print("Number :- ")
         println(item)
     }
-    // Isme loop 5 to 5 tak ja rha hai ♫
+    // Isme loop 5 to 1 tak ja rha hai ♫
     for(item in 5 downTo 1 ){
         print("Number :- ")
         println(item)

@@ -47,6 +47,26 @@ fun main() {
         }
     }
 
+
+
+    // Range kya hota hai
+    println("yha hamlog ragne ke code ko print kr rhe hai") 
+
+    val number =5;
+    // yha hamlog cheack kr rhe hai ye number 1 to 5 ke bich me aata hai ya nhi
+    val result = number in 1 ..5 // 1,2,3,4,5 >>> yha upper bound include hota hai 
+    println(result)
+    val resultt= number in 1 until 5 // 1,2,3,4 >>> Yha upper bound include nhi hota hai 
+    println(resultt)
+    /*
+    >>> Difference between .. and until is .. me upper bound include hota hai but in until
+        isme upper bound include nhi hota hai
+    >>> Range me hamlog in keyword ka use krte hai 
+    */
+
+
+
+
     // Syntax for range value ke liye same code run ho 
 
     when(sit){
