@@ -1,8 +1,8 @@
 // Primary Constructor synatx
 
-// Yha constructor likhna optional hai mhi v likh skte hai
+// Yha constructor likhna optional hai nhi v likh skte hai
 // But yha parameter ka datatype define krna jruri hai
-// Yha val likhna v jruri hai nhi lkhge to var mana jyega
+// Yha val likhna v jruri hai nhi likhge to var mana jyega
 // Class ka object create krte hi constructor call ho jata hai
 
 class Sit constructor(val name: String ,val  age:Int ) {

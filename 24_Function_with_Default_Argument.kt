@@ -23,5 +23,8 @@ Function with Default Argument >>> Hota hai jb  function call krte time koi
 */
 
 fun add(x:Int,y:Int=51):Int{
+    // y =15 >>> ye nhi kr skte hai because ye val type ka hota hai 
     return(x+y)
 }
+
+// Parameter wala jo varible hota hai wo val type ka hota hai re define nhi kr skte hai

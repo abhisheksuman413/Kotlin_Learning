@@ -3,6 +3,7 @@ fun main(){
 
     // Niche jo function bnaye hai usko call kr rhe hai 
     display()
+    display1()
     val total = adding()
     println(total)
     val total1 =multi()
@@ -39,7 +40,12 @@ fun main(){
 // Example 
 // Yha function ko define kr rhe hai
 // Default return type unit hota hai 
+// Agr function kuch nhi return kr rha hai to uska return type unit hota hai 
 fun display(){   // >>> Yha return type unit hai
+    println("Hello Kotlin")
+}
+// Unit ko likh v skte hai ya nhi v error nhi aayega 
+fun display1():Unit{   // >>> Yha return type unit hai
     println("Hello Kotlin")
 }
 

@@ -37,7 +37,8 @@ fun main() {
                 // Iska value [] me aayega
                // Bina index ke print/access krna v possible hai pura list
     
-    // sit.add("orange")
+    // sit.add("orange") >>> Ye error dega because ye sit Immutable list hai or Immutable list ko modify nhi kr skte hai 
+    // Immutable list ko only access / print kr skte hai 
 
     // Printing by loop
     for (fruit in sit) {

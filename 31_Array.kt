@@ -76,6 +76,7 @@ fun main() {
     //     println(item)
     // }
 
+
     // Loop Array and their Index
 
     println("Loop Array and their Index")
@@ -93,6 +94,16 @@ fun main() {
 
     for(i in sit1.indices){
         println("On index $i value is ${sit1[i]} ")
+    }
+    
+    // Another way to print value and index eak sath 
+    /*
+    >>> Yha i for index hua and e for value 
+    >>> or withIndex() use krna pdta hai 
+    */
+    for((i:Int ,e :String) in sit1.withIndex())
+    {
+        println("$i :- $e")
     }
 
     // Printing size of array

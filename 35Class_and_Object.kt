@@ -66,7 +66,7 @@ fun main() {
 /*
 >>> Yha jb v koi object bna rhe hai to eak default constructor create ho ja rha hai
 >>> Jb v ham koi class define krte hai or uske andr koi constructor define nhi krte 
-    hai to kotlinby deaful uske andr eak  constructor define kr deta hai jo ki 
+    hai to kotlin by deaful uske andr eak  constructor define kr deta hai jo ki 
     parameter less hota hai (Default constructor)
 >>> Default constructor paremeter less constructor hota hai uske andr koi 
     parameter nhi hota hai 
